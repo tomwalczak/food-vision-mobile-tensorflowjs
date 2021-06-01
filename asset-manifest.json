@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/food-vision-mobile-tensorflowjs/static/css/main.04a4f7a1.chunk.css",
-    "main.js": "/food-vision-mobile-tensorflowjs/static/js/main.3ce0e42f.chunk.js",
-    "main.js.map": "/food-vision-mobile-tensorflowjs/static/js/main.3ce0e42f.chunk.js.map",
+    "main.js": "/food-vision-mobile-tensorflowjs/static/js/main.924ed935.chunk.js",
+    "main.js.map": "/food-vision-mobile-tensorflowjs/static/js/main.924ed935.chunk.js.map",
     "runtime-main.js": "/food-vision-mobile-tensorflowjs/static/js/runtime-main.5a2887d2.js",
     "runtime-main.js.map": "/food-vision-mobile-tensorflowjs/static/js/runtime-main.5a2887d2.js.map",
     "static/js/2.5d228faa.chunk.js": "/food-vision-mobile-tensorflowjs/static/js/2.5d228faa.chunk.js",
     "static/js/2.5d228faa.chunk.js.map": "/food-vision-mobile-tensorflowjs/static/js/2.5d228faa.chunk.js.map",
     "index.html": "/food-vision-mobile-tensorflowjs/index.html",
-    "precache-manifest.53f6006f4489108331b7860dfcd75066.js": "/food-vision-mobile-tensorflowjs/precache-manifest.53f6006f4489108331b7860dfcd75066.js",
+    "precache-manifest.a69faf74a5c060351f301bf357a0386d.js": "/food-vision-mobile-tensorflowjs/precache-manifest.a69faf74a5c060351f301bf357a0386d.js",
     "service-worker.js": "/food-vision-mobile-tensorflowjs/service-worker.js",
     "static/css/main.04a4f7a1.chunk.css.map": "/food-vision-mobile-tensorflowjs/static/css/main.04a4f7a1.chunk.css.map",
     "static/js/2.5d228faa.chunk.js.LICENSE.txt": "/food-vision-mobile-tensorflowjs/static/js/2.5d228faa.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.5a2887d2.js",
     "static/js/2.5d228faa.chunk.js",
     "static/css/main.04a4f7a1.chunk.css",
-    "static/js/main.3ce0e42f.chunk.js"
+    "static/js/main.924ed935.chunk.js"
   ]
 }

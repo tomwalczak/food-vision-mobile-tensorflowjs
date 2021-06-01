@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6d66128ee2758910a8a1c8fd6a998108",
+    "revision": "d2311b1010cc24eff1dc2d3c620bf072",
     "url": "/food-vision-mobile-tensorflowjs/index.html"
   },
   {
-    "revision": "5645f50b27527fd3102a",
+    "revision": "4272b68e9e9d7f752833",
     "url": "/food-vision-mobile-tensorflowjs/static/css/main.04a4f7a1.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/food-vision-mobile-tensorflowjs/static/js/2.5d228faa.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5645f50b27527fd3102a",
-    "url": "/food-vision-mobile-tensorflowjs/static/js/main.3ce0e42f.chunk.js"
+    "revision": "4272b68e9e9d7f752833",
+    "url": "/food-vision-mobile-tensorflowjs/static/js/main.924ed935.chunk.js"
   },
   {
     "revision": "415635189e5b38778bd6",
