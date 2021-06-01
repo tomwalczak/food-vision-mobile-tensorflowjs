@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/food-vision-mobile-tensorflowjs/precache-manifest.a69faf74a5c060351f301bf357a0386d.js"
+  "/food-vision-mobile-tensorflowjs/precache-manifest.be0b508c71b9c022ee6de22d6e4c232d.js"
 );
 
 self.addEventListener('message', (event) => {

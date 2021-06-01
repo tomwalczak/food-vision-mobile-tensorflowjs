@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/food-vision-mobile-tensorflowjs/static/css/main.04a4f7a1.chunk.css",
-    "main.js": "/food-vision-mobile-tensorflowjs/static/js/main.924ed935.chunk.js",
-    "main.js.map": "/food-vision-mobile-tensorflowjs/static/js/main.924ed935.chunk.js.map",
+    "main.js": "/food-vision-mobile-tensorflowjs/static/js/main.bc29234f.chunk.js",
+    "main.js.map": "/food-vision-mobile-tensorflowjs/static/js/main.bc29234f.chunk.js.map",
     "runtime-main.js": "/food-vision-mobile-tensorflowjs/static/js/runtime-main.5a2887d2.js",
     "runtime-main.js.map": "/food-vision-mobile-tensorflowjs/static/js/runtime-main.5a2887d2.js.map",
-    "static/js/2.5d228faa.chunk.js": "/food-vision-mobile-tensorflowjs/static/js/2.5d228faa.chunk.js",
-    "static/js/2.5d228faa.chunk.js.map": "/food-vision-mobile-tensorflowjs/static/js/2.5d228faa.chunk.js.map",
+    "static/js/2.c566948f.chunk.js": "/food-vision-mobile-tensorflowjs/static/js/2.c566948f.chunk.js",
+    "static/js/2.c566948f.chunk.js.map": "/food-vision-mobile-tensorflowjs/static/js/2.c566948f.chunk.js.map",
     "index.html": "/food-vision-mobile-tensorflowjs/index.html",
-    "precache-manifest.a69faf74a5c060351f301bf357a0386d.js": "/food-vision-mobile-tensorflowjs/precache-manifest.a69faf74a5c060351f301bf357a0386d.js",
+    "precache-manifest.be0b508c71b9c022ee6de22d6e4c232d.js": "/food-vision-mobile-tensorflowjs/precache-manifest.be0b508c71b9c022ee6de22d6e4c232d.js",
     "service-worker.js": "/food-vision-mobile-tensorflowjs/service-worker.js",
     "static/css/main.04a4f7a1.chunk.css.map": "/food-vision-mobile-tensorflowjs/static/css/main.04a4f7a1.chunk.css.map",
-    "static/js/2.5d228faa.chunk.js.LICENSE.txt": "/food-vision-mobile-tensorflowjs/static/js/2.5d228faa.chunk.js.LICENSE.txt"
+    "static/js/2.c566948f.chunk.js.LICENSE.txt": "/food-vision-mobile-tensorflowjs/static/js/2.c566948f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.5a2887d2.js",
-    "static/js/2.5d228faa.chunk.js",
+    "static/js/2.c566948f.chunk.js",
     "static/css/main.04a4f7a1.chunk.css",
-    "static/js/main.924ed935.chunk.js"
+    "static/js/main.bc29234f.chunk.js"
   ]
 }
