@@ -87,7 +87,7 @@ function App() {
     const loadStart = new Date();
 
     const model = await tf.loadGraphModel(
-      "/models/mobilenet_v2_js_model/model.json"
+      process.env.PUBLIC_URL + "/models/mobilenet_v2_js_model/model.json"
     );
 
     const loadTime = new Date() - loadStart;
