@@ -30,14 +30,20 @@ function swap(json) {
 
 const models = [
   {
-    name: "MobileNetV2_10PC_Data_10Mb",
+    name: "MobileNetV2_10PC_Food101_10Mb",
     path: "mobilenet_v2_js_model",
     model: null,
     loadTime: null,
   },
   {
-    name: "ResNet50_10_pc_Food101_80Mb",
-    path: "resnet50_fe",
+    name: "ResNet50_all_Food101_90Mb",
+    path: "resnet_100pc_js_model",
+    model: null,
+    loadTime: null,
+  },
+  {
+    name: "MobileNetV2_ALL_Food101_10Mb",
+    path: "mobilenet_v2_100pc_js_model",
     model: null,
     loadTime: null,
   },
@@ -181,7 +187,7 @@ function App() {
             container
             spacing={1}
             alignItems="center"
-            style={{ fontSize: 20, margin: "0px auto" }}
+            style={{ fontSize: 18, margin: "0px auto" }}
           >
             <Grid item xs style={{ textAlign: "right" }}>
               Try model: 🤖{" "}
