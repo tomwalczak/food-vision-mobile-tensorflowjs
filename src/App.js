@@ -28,15 +28,33 @@ function swap(json) {
   return ret;
 }
 
+const models = [
+  {
+    name: "MobileNetV2_10PC_Data_10Mb",
+    path: "mobilenet_v2_js_model",
+    model: null,
+    loadTime: null,
+  },
+  {
+    name: "ResNet50_10_pc_Food101_80Mb",
+    path: "resnet50_fe",
+    model: null,
+    loadTime: null,
+  },
+];
+
+let currentLoadedModelIdx = 0;
+
 function App() {
   const webcamRef = useRef(null);
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [inferenceTime, setInferencetime] = React.useState(null);
-  const [modelLoadedTime, setModelLoadedTime] = React.useState(null);
 
   const [isModelLoaded, setModelLoaded] = useState(false);
   const [isSplashScreen, setIsSplashScreen] = useState(true);
+
+  // const [currentLoadedModelIdx, setCurrentLoadedModelIdx] = useState(0);
 
   const [preds, setPreds] = useState();
 
@@ -50,7 +68,9 @@ function App() {
 
   const handleMenuClose = (event) => {
     const { myValue } = event.currentTarget.dataset;
-    console.log(myValue); // --> 123
+    console.log(myValue);
+    // Can be undefined if user clicks away
+    if (myValue) currentLoadedModelIdx = myValue;
 
     setAnchorEl(null);
   };
@@ -76,63 +96,60 @@ function App() {
   const renderModelStats = () => {
     return (
       <>
-        <div>Model loaded in: {modelLoadedTime} ms</div>
+        <div>Model loaded in: {models[currentLoadedModelIdx].loadTime} ms</div>
         <div>Inference time was: {inferenceTime} ms</div>
       </>
     );
   };
 
-  // Main function
-  const run = async () => {
+  const loadModel = async () => {
     const loadStart = new Date();
-
-    const model = await tf.loadGraphModel(
-      process.env.PUBLIC_URL + "/models/mobilenet_v2_js_model/model.json"
+    models[currentLoadedModelIdx].model = await tf.loadGraphModel(
+      process.env.PUBLIC_URL +
+        `/models/${models[currentLoadedModelIdx].path}/model.json`
     );
 
     const loadTime = new Date() - loadStart;
     console.log(`Model loaded, took ${loadTime} ms`);
     setModelLoaded(true);
-    setModelLoadedTime(loadTime);
+    models[currentLoadedModelIdx].loadTime = loadTime;
+  };
 
-    //  Loop and detect hands
+  // Main function
+  const run = async () => {
+    await loadModel();
+
+    //  Loop and detect food
     setInterval(() => {
-      detect(model);
+      detect();
     }, 1000);
   };
 
-  const detect = async (model) => {
-    // Check data is available
+  const detect = async () => {
+    // Check webcam data is available
     if (
       typeof webcamRef.current !== "undefined" &&
       webcamRef.current !== null &&
       webcamRef.current.video.readyState === 4
     ) {
-      // Get Video Properties
       const video = webcamRef.current.video;
 
       const vidTensor = tf.browser.fromPixels(video);
 
       const normalizedVid = vidTensor.div(scaleFactor).expandDims(0);
 
-      // const normalizedVals = new Array(
-      //   ...normalizedVid
-      //     .dataSync()
-      //     .filter((val, idx) => idx % 100 === 0)
-      //     .map((val) => val * 100)
-      // ).map((val) => Math.round(val) / 100);
-
-      // setTfOutput(`Img tensor shape: ${normalizedVid.shape} <br />
-      //              Tensor vals: <br/>
-      //             ${normalizedVals.map((val) => val + " ")}`);
-
       const infrStart = new Date();
 
-      const preds = model.predict(normalizedVid);
-      const infrTime = new Date() - infrStart;
+      if (models[currentLoadedModelIdx].model) {
+        const preds =
+          models[currentLoadedModelIdx].model.predict(normalizedVid);
+        const infrTime = new Date() - infrStart;
 
-      setInferencetime(infrTime);
-      setPreds(preds);
+        setInferencetime(infrTime);
+        setPreds(preds);
+      } else {
+        await loadModel();
+      }
     }
   };
 
@@ -144,14 +161,13 @@ function App() {
   const videoConstraints = {
     width: 224,
     height: 224,
-    facingMode: "environment",
+    facingMode: "environment", // we're using the back camera
   };
 
   if (isSplashScreen)
     return (
       <SplashScreen
         handleClick={() => {
-          console.log("click!");
           setIsSplashScreen(false);
         }}
         modelLoaded={isModelLoaded}
@@ -181,7 +197,7 @@ function App() {
                 size="small"
                 endIcon={<ArrowDropDownIcon />}
               >
-                ResNet50_10_pc_Food101_80Mb
+                {models[currentLoadedModelIdx].name}
               </Button>
             </Grid>
           </Grid>{" "}
@@ -192,15 +208,11 @@ function App() {
             open={Boolean(anchorEl)}
             onClose={handleMenuClose}
           >
-            <MenuItem data-my-value="eff_net1" onClick={handleMenuClose}>
-              EfficientNetB0
-            </MenuItem>
-            <MenuItem data-my-value="eff_net2" onClick={handleMenuClose}>
-              EfficientNetB0 100 % data
-            </MenuItem>
-            <MenuItem data-my-value="eff_net3" onClick={handleMenuClose}>
-              EfficientNetB0 MixedPrecision
-            </MenuItem>
+            {models.map((m, idx) => (
+              <MenuItem key={idx} data-my-value={idx} onClick={handleMenuClose}>
+                {m.name}
+              </MenuItem>
+            ))}
           </Menu>
         </header>
         <div className="App-body">
@@ -222,11 +234,12 @@ function App() {
               padding: 10,
               bottom: 0,
               width: "80%",
-              maxWidth: 450,
+              maxWidth: 600,
+              minWidth: 500,
               height: 250,
               backgroundColor: "#000",
               textAlign: "left",
-              fontSize: 14,
+              fontSize: 16,
               zindex: 9,
               opacity: 0.8,
             }}

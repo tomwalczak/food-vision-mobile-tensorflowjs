@@ -24,8 +24,8 @@ function Copyright() {
 
       <Grid item>
         <Typography variant="body2" color="textSecondary" align="center">
-          <Link color="inherit" href="https://github.com/tomwalchak">
-            @tomwalchak
+          <Link color="inherit" href="https://github.com/tomwalczak">
+            @tomwalczak
           </Link>
         </Typography>
       </Grid>
@@ -83,9 +83,7 @@ const SplashScreen = ({ handleClick, modelLoaded }) => {
             if (modelLoaded) handleClick();
           }}
         >
-          {modelLoaded
-            ? "Let's go! 🧑‍🍳 "
-            : "Loading models... 🤖 🦾 (~100Mb 🥺) "}
+          {modelLoaded ? "Let's go! 🧑‍🍳 " : "Loading models... 🤖 🦾  "}
         </Button>
       </div>
       <Box mt={8}>

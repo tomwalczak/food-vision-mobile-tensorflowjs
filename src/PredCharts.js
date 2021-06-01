@@ -14,7 +14,7 @@ const CustomizedAxisTick = (props) => {
 export default function PredCharts({ data }) {
   return (
     <BarChart
-      width={400}
+      width={420}
       height={170}
       data={data}
       layout="vertical"
