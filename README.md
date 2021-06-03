@@ -4,7 +4,7 @@
 
 (This project was inspired by [@mrdbourke's](https://github.com/mrdbourke) excellent TF course, check it out: [Tensorflow Deep Learning](https://github.com/mrdbourke/tensorflow-deep-learning) )
 
-![Demo](https://media.giphy.com/media/c3fAip8pJ7clNR7OPj/giphy-downsized-large.gif)
+![Demo](https://mldatatwk.s3.us-east-2.amazonaws.com/gifs/demo.gif)
 
 ## Try out the [live app here](https://tomwalczak.github.io/food-vision-mobile-tensorflowjs/)
 
