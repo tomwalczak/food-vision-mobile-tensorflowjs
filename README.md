@@ -1,6 +1,6 @@
 # FoodVision Mobile 🍔 👀📱
 
-**TLDR;** Cool ReactJS app using TensorFlow JS to classify images of food. You can select from 3 different models and see how they perform!
+**TL;DR** Cool ReactJS app using TensorFlow JS to classify images of food. You can select from 3 different models and see how they perform!
 
 (This project was inspired by [@mrdbourke's](https://github.com/mrdbourke) excellent TF course, check it out: [Tensorflow Deep Learning](https://github.com/mrdbourke/tensorflow-deep-learning) )
 
