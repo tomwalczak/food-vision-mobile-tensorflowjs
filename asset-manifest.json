@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/food-vision-mobile-tensorflowjs/static/css/main.04a4f7a1.chunk.css",
-    "main.js": "/food-vision-mobile-tensorflowjs/static/js/main.6effaca1.chunk.js",
-    "main.js.map": "/food-vision-mobile-tensorflowjs/static/js/main.6effaca1.chunk.js.map",
+    "main.css": "/food-vision-mobile-tensorflowjs/static/css/main.5f3e77e5.chunk.css",
+    "main.js": "/food-vision-mobile-tensorflowjs/static/js/main.de87119e.chunk.js",
+    "main.js.map": "/food-vision-mobile-tensorflowjs/static/js/main.de87119e.chunk.js.map",
     "runtime-main.js": "/food-vision-mobile-tensorflowjs/static/js/runtime-main.5a2887d2.js",
     "runtime-main.js.map": "/food-vision-mobile-tensorflowjs/static/js/runtime-main.5a2887d2.js.map",
-    "static/js/2.c566948f.chunk.js": "/food-vision-mobile-tensorflowjs/static/js/2.c566948f.chunk.js",
-    "static/js/2.c566948f.chunk.js.map": "/food-vision-mobile-tensorflowjs/static/js/2.c566948f.chunk.js.map",
+    "static/js/2.cf030d94.chunk.js": "/food-vision-mobile-tensorflowjs/static/js/2.cf030d94.chunk.js",
+    "static/js/2.cf030d94.chunk.js.map": "/food-vision-mobile-tensorflowjs/static/js/2.cf030d94.chunk.js.map",
     "index.html": "/food-vision-mobile-tensorflowjs/index.html",
-    "precache-manifest.2a45eda3a3b9d3daa8076dfbda4b6edf.js": "/food-vision-mobile-tensorflowjs/precache-manifest.2a45eda3a3b9d3daa8076dfbda4b6edf.js",
+    "precache-manifest.4d8479a15ffeb1628ea4d8e2c1a4f0c5.js": "/food-vision-mobile-tensorflowjs/precache-manifest.4d8479a15ffeb1628ea4d8e2c1a4f0c5.js",
     "service-worker.js": "/food-vision-mobile-tensorflowjs/service-worker.js",
-    "static/css/main.04a4f7a1.chunk.css.map": "/food-vision-mobile-tensorflowjs/static/css/main.04a4f7a1.chunk.css.map",
-    "static/js/2.c566948f.chunk.js.LICENSE.txt": "/food-vision-mobile-tensorflowjs/static/js/2.c566948f.chunk.js.LICENSE.txt"
+    "static/css/main.5f3e77e5.chunk.css.map": "/food-vision-mobile-tensorflowjs/static/css/main.5f3e77e5.chunk.css.map",
+    "static/js/2.cf030d94.chunk.js.LICENSE.txt": "/food-vision-mobile-tensorflowjs/static/js/2.cf030d94.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.5a2887d2.js",
-    "static/js/2.c566948f.chunk.js",
-    "static/css/main.04a4f7a1.chunk.css",
-    "static/js/main.6effaca1.chunk.js"
+    "static/js/2.cf030d94.chunk.js",
+    "static/css/main.5f3e77e5.chunk.css",
+    "static/js/main.de87119e.chunk.js"
   ]
 }
