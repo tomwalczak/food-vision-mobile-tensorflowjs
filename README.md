@@ -1,8 +1,7 @@
 # FoodVision Mobile 🍔 👀📱
 
-**TL;DR** Cool ReactJS app using TensorFlow JS to classify images of food. You can select from 3 different models and see how they perform!
+Cool ReactJS app using TensorFlow JS to classify images of food. You can select from 3 different models and see how they perform!
 
-(This project was inspired by [@mrdbourke's](https://github.com/mrdbourke) excellent TF course, check it out: [Tensorflow Deep Learning](https://github.com/mrdbourke/tensorflow-deep-learning) )
 
 ![Demo](https://mldatatwk.s3.us-east-2.amazonaws.com/gifs/demo.gif)
 
@@ -19,3 +18,7 @@ My approach was to extract image features from ResNet50V2 and ImageNetV2, fit th
 It turns out that EfficientNet's built-in Keras scaling layers are not compatible with TFJS, so the model would have to be re-created and trained from scratch.
 
 The wrapper app is ReactJS.
+
+---
+
+(This project was inspired by [@mrdbourke's](https://github.com/mrdbourke) excellent TF course, check it out: [Tensorflow Deep Learning](https://github.com/mrdbourke/tensorflow-deep-learning) )
